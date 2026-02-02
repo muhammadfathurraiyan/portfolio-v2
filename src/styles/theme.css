@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "DM-Sans";
+  src: url("/fonts/DMSans-VariableFont.ttf");
+}
+
+@font-face {
+  font-family: "IBMPlexMono-Regular";
+  src: url("/fonts/IBMPlexMono-Regular.ttf");
+}
+
+@theme {
+  --color-background: #f1f1f1;
+  --color-foreground: #121212;
+  --color-primary: #ff3b00;
+  --color-border: #252525;
+
+  --font-dmSans: "DM-Sans";
+  --font-ibmPlexMono: "IBMPlexMono-Regular";
+}
