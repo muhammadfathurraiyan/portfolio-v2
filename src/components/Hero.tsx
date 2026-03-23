@@ -78,10 +78,10 @@ useGLTF.preload(MODEL_PATH);
 
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full">
+    <section className="relative h-svh w-full">
       <div className="absolute inset-0 flex size-full flex-col justify-between px-8 py-9 sm:px-16">
         <div className="flex items-center justify-between">
-          <h1 className="font-dmSans w-full text-5xl leading-[100%] tracking-widest text-nowrap sm:text-[64px] lg:text-[100px]">
+          <h1 className="font-dmSans w-full text-[42px] leading-[100%] tracking-widest text-nowrap sm:text-[64px] lg:text-[100px]">
             <TextSlideAnimation text="MUHAMMAD /n FATHUR RAIYAN" delay={2.2} />
           </h1>
         </div>
@@ -93,7 +93,7 @@ export default function Hero() {
               text="I HELP COMPANIES, BRANDS AND ENTERPRENEURS DEVELOP DIGITAL PRODUCTS AND THEIR GOALS"
             />
           </p>
-          <h2 className="font-dmSans text-5xl leading-[100%] tracking-widest sm:text-[64px] lg:text-right lg:text-[100px]">
+          <h2 className="font-dmSans text-[42px] leading-[100%] tracking-widest sm:text-[64px] lg:text-right lg:text-[100px]">
             <TextSlideAnimation text="CREATIVE /n DEVELOPER" delay={2.6} margin={false} />
           </h2>
         </div>
