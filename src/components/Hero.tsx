@@ -88,7 +88,7 @@ export default function Hero() {
         </div>
         <div className="flex justify-between max-lg:flex-col max-lg:gap-8">
           <div className="relative mt-4 space-y-3">
-             <div className="pointer-events-auto flex w-fit items-center gap-3">
+            <div className="pointer-events-auto flex w-fit items-center gap-3">
               <motion.a
                 initial={{ y: "100%", opacity: 0 }}
                 animate={{
@@ -160,7 +160,6 @@ export default function Hero() {
                 text="I HELP COMPANIES, BRANDS AND ENTERPRENEURS DEVELOP DIGITAL PRODUCTS AND THEIR GOALS"
               />
             </p>
-           
           </div>
           <h2 className="font-dmSans pointer-events-auto text-[42px] leading-[100%] tracking-widest sm:text-[64px] lg:text-right lg:text-[100px]">
             <TextSlideAnimation text="CREATIVE /n DEVELOPER" delay={2.6} margin={false} />
