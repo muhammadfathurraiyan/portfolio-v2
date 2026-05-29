@@ -4,6 +4,7 @@ import { useGLTF, OrbitControls, ContactShadows, Environment, Center } from "@re
 import * as THREE from "three";
 import { motion, useInView } from "motion/react";
 import { cn } from "../libs/utils";
+import { GithubIcon, LinkedinIcon, TwitterIcon } from "./Icons";
 
 const MODEL_PATH = "/ibex_statue/source/theappxr_Statua_Ibex_NODRACO_standard.glb";
 
@@ -79,21 +80,89 @@ useGLTF.preload(MODEL_PATH);
 export default function Hero() {
   return (
     <section className="relative h-svh w-full">
-      <div className="absolute inset-0 flex size-full flex-col justify-between px-8 py-9 sm:px-16">
+      <div className="pointer-events-none absolute inset-0 z-10 flex size-full flex-col justify-between px-8 py-9 sm:px-16">
         <div className="flex items-center justify-between">
-          <h1 className="font-dmSans w-full text-[42px] leading-[100%] tracking-widest text-nowrap sm:text-[64px] lg:text-[100px]">
+          <h1 className="font-dmSans pointer-events-auto w-full text-[42px] leading-[100%] tracking-widest text-nowrap sm:text-[64px] lg:text-[100px]">
             <TextSlideAnimation text="MUHAMMAD /n FATHUR RAIYAN" delay={2.2} />
           </h1>
         </div>
         <div className="flex justify-between max-lg:flex-col max-lg:gap-8">
-          <p className="mt-4 max-w-46 text-justify text-xs uppercase">
-            <TextSlideAnimation
-              delay={2.4}
-              margin={false}
-              text="I HELP COMPANIES, BRANDS AND ENTERPRENEURS DEVELOP DIGITAL PRODUCTS AND THEIR GOALS"
-            />
-          </p>
-          <h2 className="font-dmSans text-[42px] leading-[100%] tracking-widest sm:text-[64px] lg:text-right lg:text-[100px]">
+          <div className="relative mt-4 space-y-3">
+             <div className="pointer-events-auto flex w-fit items-center gap-3">
+              <motion.a
+                initial={{ y: "100%", opacity: 0 }}
+                animate={{
+                  y: "0",
+                  rotate: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    ease: [0.215, 0.61, 0.355, 1],
+                    delay: 2.4 + 0 * 0.05,
+                  },
+                }}
+                whileHover={{ opacity: 0.7 }}
+                href="https://github.com/muhammadfathurraiyan"
+                target="_blank"
+                className="cursor-pointer"
+                aria-label="GitHub"
+                title="GitHub"
+              >
+                <GithubIcon className="size-5" />
+              </motion.a>
+              <motion.a
+                initial={{ y: "100%", opacity: 0 }}
+                animate={{
+                  y: "0",
+                  rotate: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    ease: [0.215, 0.61, 0.355, 1],
+                    delay: 2.4 + 1 * 0.05,
+                  },
+                }}
+                whileHover={{ opacity: 0.7 }}
+                href="https://www.linkedin.com/in/muhammadfathurraiyan/"
+                target="_blank"
+                className="cursor-pointer"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+              >
+                <LinkedinIcon className="size-5" />
+              </motion.a>
+              <motion.a
+                initial={{ y: "100%", opacity: 0 }}
+                animate={{
+                  y: "0",
+                  rotate: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    ease: [0.215, 0.61, 0.355, 1],
+                    delay: 2.4 + 2 * 0.05,
+                  },
+                }}
+                whileHover={{ opacity: 0.7 }}
+                href="https://x.com/mfraiyan"
+                target="_blank"
+                className="cursor-pointer"
+                aria-label="Twitter"
+                title="Twitter"
+              >
+                <TwitterIcon className="size-5" />
+              </motion.a>
+            </div>
+            <p className="pointer-events-auto max-w-46 text-justify text-xs uppercase">
+              <TextSlideAnimation
+                delay={2.4}
+                margin={false}
+                text="I HELP COMPANIES, BRANDS AND ENTERPRENEURS DEVELOP DIGITAL PRODUCTS AND THEIR GOALS"
+              />
+            </p>
+           
+          </div>
+          <h2 className="font-dmSans pointer-events-auto text-[42px] leading-[100%] tracking-widest sm:text-[64px] lg:text-right lg:text-[100px]">
             <TextSlideAnimation text="CREATIVE /n DEVELOPER" delay={2.6} margin={false} />
           </h2>
         </div>
