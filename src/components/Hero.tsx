@@ -160,6 +160,13 @@ export default function Hero() {
                 text="I HELP COMPANIES, BRANDS AND ENTERPRENEURS DEVELOP DIGITAL PRODUCTS AND THEIR GOALS"
               />
             </p>
+            <a
+              href="https://arctic-research-base.vercel.app/"
+              target="_blank"
+              className="pointer-events-auto max-w-46 text-justify text-xs font-medium uppercase transition-all hover:opacity-70"
+            >
+              <TextSlideAnimation text="artic research base →" className="underline" delay={2.5} margin={false} />
+            </a>
           </div>
           <h2 className="font-dmSans pointer-events-auto text-[42px] leading-[100%] tracking-widest sm:text-[64px] lg:text-right lg:text-[100px]">
             <TextSlideAnimation text="CREATIVE /n DEVELOPER" delay={2.6} margin={false} />
